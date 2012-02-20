@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:padding="15dp" android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <TextView android:layout_width="fill_parent" android:id="@+id/title"
+        android:textColor="@color/black" android:gravity="center"
+        android:textStyle="bold" android:layout_height="wrap_content"
+        android:text="@string/app_name" android:textSize="18dp" />
+    <TableLayout android:orientation="horizontal"
+        android:layout_below="@+id/title" android:layout_width="fill_parent"
+        android:paddingTop="10dp" android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:text="Original Price" android:textColor="@color/black"
+                android:paddingLeft="10dp" android:layout_weight="1" />
+            <EditText android:textColor="@color/black" android:digits="1234567890."
+                android:inputType="phone" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+                android:id="@+id/price" android:layout_weight="3" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Discount %" android:textColor="@color/black"
+                android:paddingLeft="10dp" android:layout_weight="1" />
+            <EditText android:textColor="@color/black" android:digits="1234567890."
+                android:id="@+id/disc" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+                android:inputType="phone" android:layout_weight="3" />
+        </TableRow>
+        <TableRow>
+            <Button android:text="Reset" android:textColor="@color/black"
+                android:layout_weight="1" android:onClick="reset" />
+            <Button android:textColor="@color/black" android:text="Calculate"
+                android:onClick="calc" android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Savings" android:textColor="@color/black"
+                android:paddingTop="20dp" android:paddingLeft="10dp"
+                android:textSize="18dp" android:layout_weight="1" />
+            <TextView android:id="@+id/savings" android:textColor="@color/black"
+                android:textSize="18dp" android:paddingRight="10dp"
+                android:layout_weight="3" android:gravity="right" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Total" android:textColor="@color/black"
+                android:paddingTop="15dp" android:paddingLeft="10dp"
+                android:textSize="22dp" android:layout_weight="1" />
+            <TextView android:id="@+id/total" android:textColor="@color/black"
+                android:textSize="22dp" android:paddingRight="10dp"
+                android:layout_weight="3" android:gravity="right" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
