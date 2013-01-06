@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Discount Calculator</string>
+    <string name="total">Total</string>
+    <string name="savings">Savings</string>
+    <string name="reset">Reset</string>
+    <string name="calculate">Calculate</string>
+    <string name="price">Original Price</string>
+    <string name="discount">Discount %</string>
 </resources>
